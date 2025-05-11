@@ -140,7 +140,7 @@ class TaskController extends Controller
 
         return response()->json($task->load('users'));
     }
-
+}
     public function destroy($id)
     {
         $task = Task::findOrFail($id);
