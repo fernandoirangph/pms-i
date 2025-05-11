@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Modal, Button } from 'react-bootstrap';
 import { useAuth } from '../Auth/AuthContext';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Navigation() {
   const { user, logout } = useAuth();
