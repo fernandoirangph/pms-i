@@ -207,11 +207,6 @@ const Projects = () => {
     }).format(amount);
   };
 
-  const handleAssignTeamMembers = (project) => {
-    // Logic to assign team members to tasks for the selected project
-    console.log(`Assigning team members to tasks for project: ${project.name}`);
-  };
-
   const handleViewProject = (projectId) => {
     navigate(`/projects/${projectId}/`); // Navigate to the ViewTasks page with the project ID
   };
@@ -289,12 +284,6 @@ const Projects = () => {
                     onClick={() => handleViewProject(project.id)}
                   >
                     View Project
-                  </button>
-                  <button
-                    className="btn btn-secondary btn-sm"
-                    onClick={() => handleAssignTeamMembers(project)}
-                  >
-                    Assign Team Members
                   </button>
                 </td>
               </tr>
